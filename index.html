@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20221110213804" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20221110213804">
+    <title>Главная</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__visible visible-header">
+        <div class="visible-header__container container">
+            <div class="visible-header__row">
+                <div class="visible-header__column">
+                    <div class="visible-header__logo logo-header">
+                        <div class="logo-header__image">
+                            <picture><source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt="logo"></picture>
+                        </div>
+                        <div class="logo-header__text">
+                            <div class="logo-header__title">Турбо Ядро</div>
+                            <div class="logo-header__subtitle">семантика за минуту</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visible-header__column">
+                    <nav data-da="private-office-hidden, 2, 992" class="visible-header__menu menu-header">
+                        <ul class="menu-header__list">
+                            <li class="menu-header__item">
+                                <a href="" class="menu-header__link">Как работает</a>
+                            </li>
+                            <li class="menu-header__item">
+                                <a href="" class="menu-header__link">Цены</a>
+                            </li>
+                            <li class="menu-header__item">
+                                <a href="" class="menu-header__link">Частые вопросы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="visible-header__column">
+                    <div class="visible-header__login login-header">
+                        <div class="login-header__btns">
+                            <a href="" class="login-header__reg popup__btn_reg">Регистрация</a>
+                            <a href="" class="login-header__exit popup__btn_exit">Вход</a>
+                        </div>
+                        <a href="" class="login-header__icon menu-header__icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__hidden hidden-header">
+        <div class="hidden-header__container container">
+            <div class="hidden-header__body">
+                <div class="hidden-header__private-office private-office-hidden">
+                    <div class="private-office-hidden__label">Личный кабинет</div>
+                    <div class="private-office-hidden__btns">
+                        <a href=""
+                            class="private-office-hidden__btn private-office-hidden__btn_reg popup__btn_reg">Регистрация</a>
+                        <a href=""
+                            class="private-office-hidden__btn private-office-hidden__btn_exit popup__btn_exit">Вход</a>
+                    </div>
+                    <div class="private-office-hidden__schedule schedule-private-office">
+                        <div class="schedule-private-office__label">Дни работы поддержки</div>
+                        <div class="schedule-private-office__body">
+                            <div class="schedule-private-office__item">ПН-ВС. Каждый день</div>
+                            <div class="schedule-private-office__item">7:00-20:00 по Москве</div>
+                        </div>
+                    </div>
+                    <div class="private-office-hidden__contacts contacts-private-office">
+                        <div class="contacts-private-office__label">Контакты</div>
+                        <div class="contacts-private-office__body">
+                            <a href="mailto:help@turbo-yadro.ru"
+                                class="contacts-private-office__link">help@turbo-yadro.ru</a>
+                            <a href="tel:79609969576" class="contacts-private-office__link">+7-960-996-95-76</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-popup">
+        <div class="header-popup__req-block popup">
+            <div class="popup__top top-popup">
+                <div class="top-popup__row">
+                    <div class="top-popup__title">Регистрация</div>
+                    <a href="" class="top-popup__close top-popup__close_reg"></a>
+                </div>
+            </div>
+            <div class="popup__content content-popup">
+                <form action="#" class="content-popup__form form-popup">
+                    <div class="form-popup__input form-popup__input_name">
+                        <div class="form-popup__label">Ваш ник в Телеграмме</div>
+                        <input autocomplete='off' type='text' name='form[]' value="nickname" class="input">
+                        <div class="form-popup__comment">*введите никнейм без @</div>
+                    </div>
+                    <div class="form-popup__input form-popup__input-reg form-popup__input_password">
+                        <div class="form-popup__label">Пароль</div>
+                        <input autocomplete='off' type='password' name='form[]' value="********" class="input">
+                    </div>
+                    <div class="form-popup__button button-popup">
+                        <button type='submit' class="button-popup__send">Выслать пароль</button>
+                        <button type='submit' class="button-popup__submit button-popup__submit_reg">Войти</button>
+                        <a href="" class="button-popup__change button-popup__change_reg">Я уже зарегестрирован</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="header-popup__exit-block popup">
+            <div class="popup__top top-popup">
+                <div class="top-popup__row">
+                    <div class="top-popup__title">Вход</div>
+                    <a href="" class="top-popup__close top-popup__close_exit"></a>
+                </div>
+            </div>
+            <div class="popup__content content-popup">
+                <form action="#" class="content-popup__form form-popup">
+                    <div class="form-popup__input form-popup__input_name">
+                        <div class="form-popup__label">Ваш логин</div>
+                        <input autocomplete='off' type='text' name='form[]' value="nickname" class="input">
+                        <div class="form-popup__comment">*введите логин без @</div>
+                    </div>
+                    <div class="form-popup__input form-popup__input-exit  form-popup__input_password">
+                        <div class="form-popup__label">Пароль</div>
+                        <input autocomplete='off' type='password' name='form[]' value="********" class="input">
+                    </div>
+                    <div class="form-popup__button button-popup">
+                        <button type='submit' class="button-popup__submit button-popup__submit_exit">Войти</button>
+                        <a href="" class="button-popup__change button-popup__change_exit">Зарегистрироваться</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+        <main class="page">
+            <section class="page__main-block main-block">
+                <div class="main-block__container container">
+                    <div class="main-block__row">
+                        <div class="main-block__column">
+                            <div class="main-block__body">
+                                <h1 class="main-block__title">Готовая семантика за <span>1 минуту</span></h1>
+                                <div class="main-block__subtitle">Сервис <span>автоматического</span> сбора очищенных
+                                    запросов для любой страницы сайта</div>
+                                <div class="main-block__bottom">
+                                    <a href="" class="main-block__btn btn">Попробовать</a>
+                                    <div class="main-block__text">При регистрации 500 руб., хватит чтобы влюбиться
+                                        <span><img src="img/main-block/smile.svg" alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-block__column">
+                            <div class="main-block__image">
+                                <picture><source srcset="img/main-block/main-img.webp" type="image/webp"><img src="img/main-block/main-img.png" alt=""></picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__advantages advantages">
+                <div class="advantages__container container">
+                    <div class="advantages__row">
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <div class="advantages__image">
+                                    <picture><source srcset="img/advantages//01.webp" type="image/webp"><img src="img/advantages//01.png" alt=""></picture>
+                                </div>
+                                <h3 class="advantages__title">Избавит от рутины</h3>
+                                <div class="advantages__text">Долой чистку, парсинг, группировку</div>
+                            </div>
+                        </div>
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <div class="advantages__image">
+                                    <picture><source srcset="img/advantages//02.webp" type="image/webp"><img src="img/advantages//02.png" alt=""></picture>
+                                </div>
+                                <h3 class="advantages__title">Легко разобраться</h3>
+                                <div class="advantages__text">Всего 2 кнопки</div>
+                            </div>
+                        </div>
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <div class="advantages__image">
+                                    <picture><source srcset="img/advantages//03.webp" type="image/webp"><img src="img/advantages//03.png" alt=""></picture>
+                                </div>
+                                <h3 class="advantages__title">Больше заработаешь</h3>
+                                <div class="advantages__text">Высвободится много времени на новых
+                                    клиентов</div>
+                            </div>
+                        </div>
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <div class="advantages__image">
+                                    <picture><source srcset="img/advantages//04.webp" type="image/webp"><img src="img/advantages//04.png" alt=""></picture>
+                                </div>
+                                <h3 class="advantages__title">Экономия времени</h3>
+                                <div class="advantages__text">Не надо обучать сотрудников сбору семантики и сложным
+                                    действиям</div>
+                            </div>
+                        </div>
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <div class="advantages__image">
+                                    <picture><source srcset="img/advantages//05.webp" type="image/webp"><img src="img/advantages//05.png" alt=""></picture>
+                                </div>
+                                <h3 class="advantages__title">Отсутствие ошибок</h3>
+                                <div class="advantages__text">Человеческий фактор и лень никто не отменял, влияющие
+                                    на полноту их сбора</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__know-how know-how">
+                <div class="know-how__container container">
+                    <div class="know-how__top top-block top-block_center">
+                        <h2 class="top-block__title">Ноу-Хау в Кластеризаторе <span>по Топ-у</span></h2>
+                    </div>
+                    <div class="hover-block__body">
+                        <div class="hover-block__items">
+                            <div class="hover-block__item">
+                                <div class="hover-block__icon">
+                                    <picture><source srcset="img/know-how/icons/01.webp" type="image/webp"><img src="img/know-how/icons/01.png" alt=""></picture>
+                                </div>
+                                <div class="hover-block__content">
+                                    <h3 class="hover-block__title">Отличительные особенности</h3>
+                                    <div class="hover-block__text">На основе лучших страниц конкурентов по видимости
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hover-block__item">
+                                <div class="hover-block__icon">
+                                    <picture><source srcset="img/know-how/icons/02.webp" type="image/webp"><img src="img/know-how/icons/02.png" alt=""></picture>
+                                </div>
+                                <div class="hover-block__content">
+                                    <h3 class="hover-block__title">Простая логика</h3>
+                                    <div class="hover-block__text">Если они смогли быть в ТОП по этим запросам, значит и
+                                        вы сможете
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hover-block__item">
+                                <div class="hover-block__icon">
+                                    <picture><source srcset="img/know-how/icons/03.webp" type="image/webp"><img src="img/know-how/icons/03.png" alt=""></picture>
+                                </div>
+                                <div class="hover-block__content">
+                                    <h3 class="hover-block__title">Превосходство метода</h3>
+                                    <div class="hover-block__text">
+                                        <p>1. Запросы которые реально посадить на страницу</p>
+                                        <p>2. Не нужно думать над объединять или разделять по запросам со слабыми
+                                            связями</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hover-block__image">
+                            <picture><source srcset="img/know-how/image.webp" type="image/webp"><img src="img/know-how/image.png" alt="know-how"></picture>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__how-work how-work" data-scroll="Как работает">
+                <div class="how-work__container container">
+                    <div class="how-work__top top-block top-block_center">
+                        <h2 class="top-block__title">Как работает сервис</h2>
+                        <div class="top-block__subtitle">Процесс состоит из следующих действий</div>
+                    </div>
+                    <div class="how-work__row">
+                        <div class="how-work__column">
+                            <div class="how-work__content">
+                                <div class="how-work__header">
+                                    <div class="how-work__icon">1</div>
+                                    <h3 class="how-work__title">Сбор запросов конкурентов</h3>
+                                </div>
+                                <div class="how-work__text">Берем запросы со страниц конкурентов, используя платные,
+                                    обновляемые базы</div>
+                            </div>
+                            <div class="how-work__video video-how-work">
+                                <video class="video-how-work__file">
+                                    <source src="videos/01.mp4" type="video/mp4">
+                                </video>
+                                <a href="" class="video-how-work__button"><span></span></a>
+                            </div>
+                        </div>
+                        <div class="how-work__column">
+                            <div class="how-work__content">
+                                <div class="how-work__header">
+                                    <div class="how-work__icon">2</div>
+                                    <h3 class="how-work__title">Кластеризация <span>Ноу-Хау</span></h3>
+                                </div>
+                                <div class="how-work__text">Вначале производится чистка запросов. Далее сбор данных и их
+                                    обработка с перепроверкой данных</div>
+                            </div>
+                            <div class="how-work__video video-how-work">
+                                <video class="video-how-work__file">
+                                    <source src="videos/02.mp4" type="video/mp4">
+                                </video>
+                                <a href="" class="video-how-work__button"><span></span></a>
+                            </div>
+                        </div>
+                        <div class="how-work__column">
+                            <div class="how-work__content">
+                                <div class="how-work__header">
+                                    <div class="how-work__icon">3</div>
+                                    <h3 class="how-work__title">Подготовка готовой семантики</h3>
+                                </div>
+                                <div class="how-work__text">Сбор частотности. Определение правильного (самого
+                                    частотного) порядка слов</div>
+                            </div>
+                            <div class="how-work__video video-how-work">
+                                <video class="video-how-work__file">
+                                    <source src="videos/03.mp4" type="video/mp4">
+                                </video>
+                                <a href="" class="video-how-work__button"><span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="page__price price" data-scroll="Цены">
+                <div class="price__container container">
+                    <div class="price__top top-block">
+                        <h2 class="top-block__title">Цены</h2>
+                    </div>
+                    <div class="price__body">
+                        <div class="price__list list-price">
+                            <div class="list-price__content">
+                                <div class="list-price__header">
+                                    <div class="list-price__title list-price__title_1">Функционал</div>
+                                    <div class="list-price__title list-price__title_2">Стоимость</div>
+                                </div>
+                                <div class="list-price__body">
+                                    <div class="list-price__item">
+                                        <div class="list-price__label">Сбор запросов по конкурентам</div>
+                                        <div class="list-price__value">100 руб. <span>за задачу</span></div>
+                                    </div>
+                                    <div class="list-price__item">
+                                        <div class="list-price__label">Класстеризатор по ТОП</div>
+                                        <div class="list-price__value">0.1 руб. <span>за фразу</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price__info info-price">
+                            <div class="info-price__item">
+                                <div class="info-price__image">
+                                    <picture><source srcset="img/price/01.webp" type="image/webp"><img src="img/price/01.png" alt=""></picture>
+                                </div>
+                                <div class="info-price__body">
+                                    <h3 class="info-price__title">Никаких тарифов</h3>
+                                    <div class="info-price__text">Пополняйте на ту сумму, которую нужно сейчас,
+                                        не переплачивая за тариф</div>
+                                </div>
+                            </div>
+                            <div class="info-price__item">
+                                <div class="info-price__image">
+                                    <picture><source srcset="img/price/02.webp" type="image/webp"><img src="img/price/02.png" alt=""></picture>
+                                </div>
+                                <div class="info-price__body">
+                                    <h3 class="info-price__title">Не сгорает баланс</h3>
+                                    <div class="info-price__text">Нет ограничений по времени</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__reviews reviews">
+                <div class="reviews__container container">
+                    <div class="reviews__top top-block">
+                        <h2 class="top-block__title">Отзывы</h2>
+                    </div>
+                    <!-- Slider main container -->
+                    <div class="reviews__swiper swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="reviews__wrapper swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="reviews__slide slide-reviews swiper-slide">
+                                <div class="slide-reviews__body">
+                                    <div class="slide-reviews__person">
+                                        <div class="slide-reviews__photo">
+                                            <picture><source srcset="img/reviews/01.webp" type="image/webp"><img src="img/reviews/01.png" alt="reviews-person"></picture>
+                                        </div>
+                                        <div class="slide-reviews__info">
+                                            <div class="slide-reviews__name">Кирилл</div>
+                                            <div class="slide-reviews__position">SEO специалист</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-reviews__comment">
+                                        <div class="slide-reviews__triangle"></div>
+                                        <div class="slide-reviews__content">
+                                            <div class="slide-reviews__header">
+                                                <div class="slide-reviews__icon"><img src="img/reviews/icon.svg"
+                                                        alt="icon"></div>
+                                                <h3 class="slide-reviews__title">Лучший сервис!!!</h3>
+                                            </div>
+                                            <div class="slide-reviews__text">Задача организации, в особенности же
+                                                дальнейшее развитие различных форм деятельности в значительной степени
+                                                обуславливает создание системы обучения кадров, соответствует насущным
+                                                потребностям. Повседневная практика показывает, что укрепление и
+                                                развитие!!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews__slide slide-reviews swiper-slide">
+                                <div class="slide-reviews__body">
+                                    <div class="slide-reviews__person">
+                                        <div class="slide-reviews__photo">
+                                            <picture><source srcset="img/reviews/02.webp" type="image/webp"><img src="img/reviews/02.png" alt="reviews-person"></picture>
+                                        </div>
+                                        <div class="slide-reviews__info">
+                                            <div class="slide-reviews__name">Иван</div>
+                                            <div class="slide-reviews__position">SEO студия “Альтернатива”</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-reviews__comment">
+                                        <div class="slide-reviews__triangle"></div>
+                                        <div class="slide-reviews__content">
+                                            <div class="slide-reviews__header">
+                                                <div class="slide-reviews__icon"><img src="img/reviews/icon.svg"
+                                                        alt="icon">
+                                                </div>
+                                                <h3 class="slide-reviews__title">Значимость этих проблем настолько
+                                                    очевидна :)</h3>
+                                            </div>
+                                            <div class="slide-reviews__text">Таким образом рамки и место обучения кадров
+                                                играет важную роль в формировании соответствующий условий активизации.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews__slide slide-reviews swiper-slide">
+                                <div class="slide-reviews__body">
+                                    <div class="slide-reviews__person">
+                                        <div class="slide-reviews__photo">
+                                            <picture><source srcset="img/reviews/01.webp" type="image/webp"><img src="img/reviews/01.png" alt="reviews-person"></picture>
+                                        </div>
+                                        <div class="slide-reviews__info">
+                                            <div class="slide-reviews__name">Кирилл</div>
+                                            <div class="slide-reviews__position">SEO специалист</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-reviews__comment">
+                                        <div class="slide-reviews__triangle"></div>
+                                        <div class="slide-reviews__content">
+                                            <div class="slide-reviews__header">
+                                                <div class="slide-reviews__icon"><img src="img/reviews/icon.svg"
+                                                        alt="icon"></div>
+                                                <h3 class="slide-reviews__title">Лучший сервис!!!</h3>
+                                            </div>
+                                            <div class="slide-reviews__text">Задача организации, в особенности же
+                                                дальнейшее развитие различных форм деятельности в значительной степени
+                                                обуславливает создание системы обучения кадров, соответствует насущным
+                                                потребностям. Повседневная практика показывает, что укрепление и
+                                                развитие!!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews__slide slide-reviews swiper-slide">
+                                <div class="slide-reviews__body">
+                                    <div class="slide-reviews__person">
+                                        <div class="slide-reviews__photo">
+                                            <picture><source srcset="img/reviews/02.webp" type="image/webp"><img src="img/reviews/02.png" alt="reviews-person"></picture>
+                                        </div>
+                                        <div class="slide-reviews__info">
+                                            <div class="slide-reviews__name">Иван</div>
+                                            <div class="slide-reviews__position">SEO студия “Альтернатива”</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-reviews__comment">
+                                        <div class="slide-reviews__triangle"></div>
+                                        <div class="slide-reviews__content">
+                                            <div class="slide-reviews__header">
+                                                <div class="slide-reviews__icon"><img src="img/reviews/icon.svg"
+                                                        alt="icon">
+                                                </div>
+                                                <h3 class="slide-reviews__title">Значимость этих проблем настолько
+                                                    очевидна :)</h3>
+                                            </div>
+                                            <div class="slide-reviews__text">Таким образом рамки и место обучения кадров
+                                                играет важную роль в формировании соответствующий условий активизации.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews__slide slide-reviews swiper-slide">
+                                <div class="slide-reviews__body">
+                                    <div class="slide-reviews__person">
+                                        <div class="slide-reviews__photo">
+                                            <picture><source srcset="img/reviews/01.webp" type="image/webp"><img src="img/reviews/01.png" alt="reviews-person"></picture>
+                                        </div>
+                                        <div class="slide-reviews__info">
+                                            <div class="slide-reviews__name">Кирилл</div>
+                                            <div class="slide-reviews__position">SEO специалист</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-reviews__comment">
+                                        <div class="slide-reviews__triangle"></div>
+                                        <div class="slide-reviews__content">
+                                            <div class="slide-reviews__header">
+                                                <div class="slide-reviews__icon"><img src="img/reviews/icon.svg"
+                                                        alt="icon"></div>
+                                                <h3 class="slide-reviews__title">Лучший сервис!!!</h3>
+                                            </div>
+                                            <div class="slide-reviews__text">Задача организации, в особенности же
+                                                дальнейшее развитие различных форм деятельности в значительной степени
+                                                обуславливает создание системы обучения кадров, соответствует насущным
+                                                потребностям. Повседневная практика показывает, что укрепление и
+                                                развитие!!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews__slide slide-reviews swiper-slide">
+                                <div class="slide-reviews__body">
+                                    <div class="slide-reviews__person">
+                                        <div class="slide-reviews__photo">
+                                            <picture><source srcset="img/reviews/02.webp" type="image/webp"><img src="img/reviews/02.png" alt="reviews-person"></picture>
+                                        </div>
+                                        <div class="slide-reviews__info">
+                                            <div class="slide-reviews__name">Иван</div>
+                                            <div class="slide-reviews__position">SEO студия “Альтернатива”</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-reviews__comment">
+                                        <div class="slide-reviews__triangle"></div>
+                                        <div class="slide-reviews__content">
+                                            <div class="slide-reviews__header">
+                                                <div class="slide-reviews__icon"><img src="img/reviews/icon.svg"
+                                                        alt="icon">
+                                                </div>
+                                                <h3 class="slide-reviews__title">Значимость этих проблем настолько
+                                                    очевидна :)</h3>
+                                            </div>
+                                            <div class="slide-reviews__text">Таким образом рамки и место обучения кадров
+                                                играет важную роль в формировании соответствующий условий активизации.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews__slide slide-reviews swiper-slide">
+                                <div class="slide-reviews__body">
+                                    <div class="slide-reviews__person">
+                                        <div class="slide-reviews__photo">
+                                            <picture><source srcset="img/reviews/01.webp" type="image/webp"><img src="img/reviews/01.png" alt="reviews-person"></picture>
+                                        </div>
+                                        <div class="slide-reviews__info">
+                                            <div class="slide-reviews__name">Кирилл</div>
+                                            <div class="slide-reviews__position">SEO специалист</div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-reviews__comment">
+                                        <div class="slide-reviews__triangle"></div>
+                                        <div class="slide-reviews__content">
+                                            <div class="slide-reviews__header">
+                                                <div class="slide-reviews__icon"><img src="img/reviews/icon.svg"
+                                                        alt="icon"></div>
+                                                <h3 class="slide-reviews__title">Лучший сервис!!!</h3>
+                                            </div>
+                                            <div class="slide-reviews__text">Задача организации, в особенности же
+                                                дальнейшее развитие различных форм деятельности в значительной степени
+                                                обуславливает создание системы обучения кадров, соответствует насущным
+                                                потребностям. Повседневная практика показывает, что укрепление и
+                                                развитие!!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="reviews__button swiper-button-prev reviews__button-prev"></div>
+                        <!-- If we need pagination -->
+                        <div class="reviews__pagination-fraction swiper-pagination"></div>
+                        <div class="reviews__button reviews__button-next swiper-button-next"></div>
+                        <div class="reviews__pagination-bullets swiper-pagination"></div>
+                        <!-- If we need pagination -->
+                    </div>
+                    <div class="reviews__bottom bottom-reviews">
+                        <a href="" class="bottom-reviews__btn btn">Попробовать</a>
+                    </div>
+                </div>
+            </section>
+            <section class="page__questions questions" data-scroll="Частые вопросы">
+                <div class="questions__container container">
+                    <div class="questions__top top-block top-block_center">
+                        <h2 class="top-block__title">Популярные вопросы</h2>
+                    </div>
+                    <div class="questions__body">
+                        <div class="questions__item">
+                            <div class="questions__header">
+                                <h3 class="questions__title">Насколько полной получается семантика?</h3>
+                                <div class="questions__arrow"></div>
+                            </div>
+                            <div class="questions__text">
+                                <p>Используется сразу несоклько платных, обновляемых баз, общей
+                                    суммой 150 миллионов запросов. Сегодня практически не осталось ниш в которых не
+                                    проработана seo-специалистами семантика. Вероятность найти новые ключи, крайне
+                                    низкая.
+                                    Поэтому, гораздо эффективнее взять готовую семантику конкурентов.</p>
+                            </div>
+                        </div>
+                        <div class="questions__item">
+                            <div class="questions__header">
+                                <h3 class="questions__title">Почему не нужно чистить запросы?</h3>
+                                <div class="questions__arrow"></div>
+                            </div>
+                            <div class="questions__text">Используется сразу несоклько платных, обновляемых баз, общей
+                                суммой 150 миллионов запросов. Сегодня практически не осталось ниш в которых не
+                                проработана seo-специалистами семантика. Вероятность найти новые ключи, крайне низкая.
+                                Поэтому, гораздо эффективнее взять готовую семантику конкурентов.</div>
+                        </div>
+                        <div class="questions__item">
+                            <div class="questions__header">
+                                <h3 class="questions__title">Возможна ли оплата для юридических лиц?</h3>
+                                <div class="questions__arrow"></div>
+                            </div>
+                            <div class="questions__text">Используется сразу несоклько платных, обновляемых баз, общей
+                                суммой 150 миллионов запросов. Сегодня практически не осталось ниш в которых не
+                                проработана seo-специалистами семантика. Вероятность найти новые ключи, крайне низкая.
+                                Поэтому, гораздо эффективнее взять готовую семантику конкурентов.</div>
+                        </div>
+                        <div class="questions__item">
+                            <div class="questions__header">
+                                <h3 class="questions__title">Почему класстеризатор не распределяет сразу по нескольким
+                                    страницам?</h3>
+                                <div class="questions__arrow"></div>
+                            </div>
+                            <div class="questions__text">Используется сразу несоклько платных, обновляемых баз, общей
+                                суммой 150 миллионов запросов. Сегодня практически не осталось ниш в которых не
+                                проработана seo-специалистами семантика. Вероятность найти новые ключи, крайне низкая.
+                                Поэтому, гораздо эффективнее взять готовую семантику конкурентов.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__affiliate-program affiliate-program">
+                <div class="affiliate-program__container container">
+                    <div class="affiliate-program__top top-block top-block_center">
+                        <h2 class="top-block__title">Партнерская программа</h2>
+                    </div>
+                    <div class="hover-block__body">
+                        <div class="hover-block__items">
+                            <div class="hover-block__item">
+                                <div class="hover-block__icon">
+                                    <picture><source srcset="img/affiliate-program/icons/01.webp" type="image/webp"><img src="img/affiliate-program/icons/01.png" alt=""></picture>
+                                </div>
+                                <div class="hover-block__content">
+                                    <h3 class="hover-block__title">Приведи друга</h3>
+                                    <div class="hover-block__text">Отправьте ему ссылку или промокод</div>
+                                </div>
+                            </div>
+                            <div class="hover-block__item">
+                                <div class="hover-block__icon">
+                                    <picture><source srcset="img/affiliate-program/icons/02.webp" type="image/webp"><img src="img/affiliate-program/icons/02.png" alt=""></picture>
+                                </div>
+                                <div class="hover-block__content">
+                                    <h3 class="hover-block__title">После пополнения им баланса</h3>
+                                    <div class="hover-block__text">эту сумму (столько же) отправим вам и ему до 500 руб.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hover-block__item">
+                                <div class="hover-block__icon">
+                                    <picture><source srcset="img/affiliate-program/icons/03.webp" type="image/webp"><img src="img/affiliate-program/icons/03.png" alt=""></picture>
+                                </div>
+                                <div class="hover-block__content">
+                                    <h3 class="hover-block__title">Если захотите вывести деньги</h3>
+                                    <div class="hover-block__text">нужно будет показать нам постоянный источник
+                                        привлечения (защита от спама)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hover-block__image">
+                            <picture><source srcset="img/affiliate-program/image.webp" type="image/webp"><img src="img/affiliate-program/image.png" alt="know-how"></picture>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__row">
+            <div class="footer__column">
+                <div class="footer__copy copy-footer">
+                    <div class="copy-footer__logo logo-footer">
+                        <div class="logo-footer__image">
+                            <picture><source srcset="img/footer/logo.webp" type="image/webp"><img src="img/footer/logo.png" alt=""></picture>
+                        </div>
+                        <div class="logo-footer__text">
+                            <div class="logo-footer__title">Турбо Ядро</div>
+                            <div class="logo-footer__subtitle">семантика за минуту</div>
+                        </div>
+                    </div>
+                    <div data-da="footer__row, 4, 600" class="copy-footer__text">Турбо Ядро © [2022]. Все права
+                        защищены</div>
+                </div>
+            </div>
+            <div class="footer__column">
+                <div class="footer__schedule schedule-footer">
+                    <div class="schedule-footer__label">Дни работы поддержки</div>
+                    <div class="schedule-footer__body">
+                        <div class="schedule-footer__item">ПН-ВС. Каждый день</div>
+                        <div class="schedule-footer__item">7:00-20:00 по Москве</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__column">
+                <div class="footer__contacts contacts-footer">
+                    <div class="contacts-footer__label">Контакты</div>
+                    <div class="contacts-footer__body">
+                        <a href="mailto:help@turbo-yadro.ru" class="contacts-footer__link">help@turbo-yadro.ru</a>
+                        <a href="tel:79609969576" class="contacts-footer__link">+7-960-996-95-76</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__column">
+                <div class="footer__links links-footer">
+                    <a href="" class="links-footer__link">Пользовательское соглашение</a>
+                    <a href="" class="links-footer__link">Политика оплаты и возврата</a>
+                    <a href="" class="links-footer__link">Политика использования Cookie</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js?_v=20221110213804"></script>
+    <script src="js/app.min.js?_v=20221110213804"></script>
+</body>
+
+</html>
